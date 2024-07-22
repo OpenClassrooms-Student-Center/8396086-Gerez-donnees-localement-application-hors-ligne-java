@@ -1,5 +1,8 @@
 plugins {
   alias(libs.plugins.android.application)
+
+  //application des plugin gradle
+  alias(libs.plugins.room)
 }
 
 android {
@@ -25,6 +28,11 @@ android {
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+  }
+
+  //Configuration du plugin gradle de room
+  room {
+    schemaDirectory("$projectDir/schemas")
   }
 }
 

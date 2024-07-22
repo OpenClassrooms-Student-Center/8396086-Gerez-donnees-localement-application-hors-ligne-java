@@ -26,3 +26,6 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+
+#Ajout du plugin Room
+room = { id = "androidx.room", version.ref = "room" }
