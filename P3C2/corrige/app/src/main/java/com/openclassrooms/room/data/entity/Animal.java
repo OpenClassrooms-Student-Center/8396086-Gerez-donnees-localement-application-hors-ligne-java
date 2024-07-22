@@ -8,12 +8,12 @@ import androidx.room.PrimaryKey;
 final public class Animal
 {
 
-  enum Type
+  public enum Type
   {
     CAT, DOG, RABBIT
   }
 
-  enum Race
+  public enum Race
   {
     PERSIAN, SIEMESE,
     GERMAN_SHEPHERD, GOLDEN_RETRIEVER,
