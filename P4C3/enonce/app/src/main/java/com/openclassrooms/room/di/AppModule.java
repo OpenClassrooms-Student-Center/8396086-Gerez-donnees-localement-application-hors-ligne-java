@@ -47,6 +47,7 @@ public final class AppModule
         .build();
   }
 
+  @Provides
   public AnimalDao provideAnimalDao(PETiSoinDatabase database)
   {
     return database.animalDao();
